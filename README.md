@@ -24,12 +24,7 @@ export interface IWallet {
   address: string
 
   signInput(txComposer: TxComposer, inputIndex: number, ...option): TxComposer
-  send(
-    toAddress: string,
-    amount: number,
-  ): Promise<{
-    txid: string
-  }>
+  send(toAddress: string, amount: number): Promise<{ txid: string }>
   broadcast(txComposer: TxComposer): Promise<{ txid: string }>
   
   encrypt(data: string, alg: string, encoding: string = "hex", ...option): string
