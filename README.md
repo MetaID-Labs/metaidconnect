@@ -19,7 +19,7 @@ MetaIDConnect is an open-source wallet protocol specification based on the MetaI
 To integrate with MetaIDConnect, all that's required is for a wallet to implement the MetaIDConnect protocol specifications. Wallets that adhere to the MetaIDConnect protocol specifications can serve as plugin wallets for MetaIDConnect, offering users identity authentication, signing, transaction submission, broadcasting, and other essential features when using MetaID applications.
 
 The defined MetaIDConnect-Wallet interface is as follows:：
-```
+```ts
 export interface IWallet {
   address: string
 
